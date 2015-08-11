@@ -4,6 +4,12 @@ require("todo")
 
 describe(Task) do
 
+  describe(".all")do
+    it("should hopefully please be empty??") do
+      expect(Task.all()).to(eq([]))
+    end
+  end
+
   before() do
     @test_task = Task.new("fry your brain")
   end
