@@ -6,6 +6,7 @@ describe(Task) do
 
 
   before() do
+    Task.clear()
     @test_task = Task.new("fry your brain")
   end
 

@@ -1,0 +1,15 @@
+<h1>To-Do List (very original)</h1>
+
+<p>Your Tasks:</p>
+<ul>
+  <% @tasks.each() do |task| %>
+    <li><%= task.description() %></li>
+  <% end %>
+</ul>
+
+<form action="/success" method="post">
+  <label for="description">What'cha doin?</label>
+  <input type="text" name="description" id="description">
+
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
